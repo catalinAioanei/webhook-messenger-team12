@@ -3,6 +3,7 @@
 // Imports dependencies and set up http server
 const express = require('express');
 const bodyParser = require('body-parser');
+const port = process.env.PORT || 1337; 
 const app = express().use(bodyParser.json()); // creates express http server
 
 // Sets server port and logs message on success
